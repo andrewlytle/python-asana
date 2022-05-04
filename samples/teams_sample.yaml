@@ -39,6 +39,14 @@ teams:
 
 
         result = client.teams.get_teams_for_user(user_gid, {'param': 'value', 'param': 'value'}, opt_pretty=True)
+    get_teams_for_workspcae: >-
+        import asana
+
+
+        client = asana.Client.access_token('PERSONAL_ACCESS_TOKEN')
+
+
+        result = client.teams.get_teams_for_workspcae(workspace_gid, {'param': 'value', 'param': 'value'}, opt_pretty=True)
     remove_user_for_team: >-
         import asana
 
